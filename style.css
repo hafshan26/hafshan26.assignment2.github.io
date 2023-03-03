@@ -1,0 +1,71 @@
+#photoViewer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+  }
+  
+  .photo {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+  }
+  
+  .photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .zoomedPhoto {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 10;
+  }
+  
+  .zoomedPhoto img {
+	max-width: 90%;
+	max-height: 90%;
+  }
+  
+  #favoritesList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 20px;
+  }
+  
+  .favorite {
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .favorite img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+  }
+  
+  .remove {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: red;
+	color: white;
+	padding: 5px 10px;
+	cursor: pointer;
+	display: none;
+  }
+  
+  .message {
+	color: red;
+	margin-top: 20px;
+  }
+  
+  
